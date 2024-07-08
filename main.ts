@@ -41,6 +41,7 @@ export default class GithubBlogSyncPlugin extends Plugin {
 		const REPO = this.settings.githubRepoUrl;
 		const DIR = this.settings.gitDirLocation;
 
+		// @ts-ignore
 		const dir = path.join(this.app.vault.adapter.getBasePath(), DIR);
 
 		try {
